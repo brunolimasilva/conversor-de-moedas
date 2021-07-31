@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Conversor de moedas</title>
+  </head>
+  <body>
+    <div id="cabeçalho">
+      <h1>Conversor de moedas</h1>
+    </div>
+
+    <div id="caixa-principal">
+      <p class="paragrafo">Converter <b>de:</b></p>
+      <select class="select">
+        <option>R$ Real Brasileiro</option>
+      </select>
+
+      <p class="paragrafo">Converter <b>para:</b></p>
+      <select class="select" id="select-moedas">
+        <option>US$ Dolar Americano</option>
+        <option>€ Euro</option>
+      </select>
+
+      <p class="paragrafo"><b>Valor</b></p>
+      <input id="input" placeholder="R$ 10.000,00" type="number" />
+
+      <button id="botao">Converter</button>
+
+      <div id="caixa-interna">
+        <div class="caixa-menor">
+          <img src="./img/brasil.png">
+          <p class="paragrafo">Real</p>
+          <p class="paragrafo-negrito" id="texto-real">R$10.000,00</p>
+        </div>
+
+        <img id="seta" src="./img/seta.png">
+
+        <div class="caixa-menor">
+          <img id="bandeira-moedas" src="./img/eua.png" />
+          <p class="paragrafo" id="texto-moedas">Dolar Americano</p>
+          <p class="paragrafo-negrito" id="input-moedas">$ 2000</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
